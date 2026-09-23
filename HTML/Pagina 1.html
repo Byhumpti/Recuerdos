@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un pequeño rincón</title>
+    <link href="../CSS/Estilos.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+
+<main class="pizarron">
+
+    <!-- TITULO -->
+    <div class="titulo papel">
+        <h1>Para alguien especial</h1>
+        <p>Un pequeño rincón lleno de recuerdos  no se porque hago esto ayuda tengo sueño</p>
+    </div>
+
+
+    <!-- FOTO 1 -->
+    <div class="foto foto1 polaroid" onclick="abrirPantalla('foto1')">
+        <img src="../IMAGENES/zina 1.jpeg" alt=""/>
+        <p>Un recuerdo</p>
+    </div>
+
+
+    <!-- FOTO 2 -->
+    <div class="foto foto2 polaroid" onclick="abrirPantalla('foto2')">
+        <img src="../IMAGENES/zina 2.jpeg" alt=""/>
+        <p>Otro recuerdo</p>
+    </div>
+
+
+    <!-- FOTO 3 -->
+    <div class="foto foto3 polaroid" onclick="abrirPantalla('foto3')">
+        <img src="../IMAGENES/zina 3.jpeg" alt=""/>
+        <p>Contenido genérico 3</p>
+    </div>
+
+
+    <!-- FOTO 4 -->
+    <div class="foto foto4 polaroid" onclick="abrirPantalla('foto4')">
+        <img src="../IMAGENES/zina 4.jpeg" alt=""/>
+        <p>Contenido genérico 4</p>
+    </div>
+
+
+    <!-- POSTER -->
+    <div class="poster papel" onclick="abrirPantalla('poster')">
+        <div class="poster-contenido">
+            <span>✦</span>
+            <h2>MEMORIES</h2>
+            <small>somewhere between<br>yesterday & tomorrow</small>
+            <span>✦</span>
+        </div>
+    </div>
+
+
+    <!-- NOTA 1 -->
+    <div class="nota nota1 papel" onclick="abrirPantalla('nota1')">
+        <span class="chincheta"></span>
+        <p>
+            A veces las mejores cosas
+            aparecen sin avisar.
+        </p>
+    </div>
+
+
+    <!-- NOTA 2 -->
+    <div class="nota nota2 papel" onclick="abrirPantalla('nota2')">
+        <span class="chincheta"></span>
+        <p>
+            ✎ Esto es solo el comienzo...
+        </p>
+    </div>
+
+
+    <!-- VIDEO 1 -->
+    <div class="video-card video1 papel" onclick="abrirPantalla('video1')">
+        <span class="video-icon">▶</span>
+        <strong>JKASJKAS ESTE VIDEO</strong>
+        <small>Algun dia grabaremos ese trend</small>
+    </div>
+
+
+    <!-- VIDEO 2 -->
+    <div class="video-card video2 papel" onclick="abrirPantalla('video2')">
+        <span class="video-icon">▶</span>
+        <strong>Como me gusta tomar con zina</strong>
+        <small>La musica lo es todo en la vida</small>
+    </div>
+
+
+    <!-- CANCION -->
+    <div class="musica papel" onclick="abrirPantalla('musica')">
+
+        <div class="disco">♫</div>
+
+        <div class="info-musica">
+            <strong>Close to you</strong>
+            <span>Me gusto la cancion y es mi pagina asi que hago lo que me da la gana >:)</span>
+        </div>
+
+        <button
+            id="playBtn"
+            type="button"
+            onclick="event.stopPropagation()">
+            ▶
+        </button>
+
+    </div>
+
+
+    <!-- DECORACION -->
+    <div class="estrellas">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+    </div>
+
+
+    <!-- LUNAS -->
+    <div class="luna luna1"></div>
+    <div class="luna luna2"></div>
+    <div class="luna luna3"></div>
+
+
+    <!-- LOBO -->
+    <div class="animal lobo lobo1">
+        <div class="oreja izquierda"></div>
+        <div class="oreja derecha"></div>
+
+        <div class="cara">
+            <div class="ojo ojo1"></div>
+            <div class="ojo ojo2"></div>
+            <div class="hocico"></div>
+        </div>
+    </div>
+
+
+    <!-- ZORRO -->
+    <div class="animal zorro zorro1">
+        <div class="oreja izquierda"></div>
+        <div class="oreja derecha"></div>
+
+        <div class="cara">
+            <div class="ojo ojo1"></div>
+            <div class="ojo ojo2"></div>
+            <div class="hocico"></div>
+        </div>
+    </div>
+
+</main>
+
+
+<!-- ========================= -->
+<!-- PANTALLAS INTERNAS -->
+<!-- ========================= -->
+
+
+<!-- FOTO 1 -->
+<div id="pantalla-foto1" class="pantalla-interna">
+
+    <button class="cerrar" onclick="cerrarPantalla()">×</button>
+
+    <div class="contenido-pantalla">
+        <img src="../IMAGENES/zina 1.jpeg" alt=""/>
+        <h1>Zina en miniso 1</h1>
+        <p>Aun recuerdo cuando estuvimos hora comprando en miniso (para que al final no compraras nada xddd.</p>
+    </div>
+
+</div>
+
+
+<!-- FOTO 2 -->
+<div id="pantalla-foto2" class="pantalla-interna">
+
+    <button class="cerrar" onclick="cerrarPantalla()">×</button>
+
+    <div class="contenido-pantalla">
+        <img src="../IMAGENES/zina 2.jpeg" alt=""/>
+        <h1>Cumpleaños de Zina</h1>
+        <p>Fue raro que despues de haber visto el musical terminamos comiendo pizza y conociendo mejor a nico y a maguito (no me funes pero olvide quien era ella xd).</p>
+    </div>
+
+</div>
+
+
+<!-- FOTO 3 -->
+<div id="pantalla-foto3" class="pantalla-interna">
+
+    <button class="cerrar" onclick="cerrarPantalla()">×</button>
+
+    <div class="contenido-pantalla">
+        <img src="../IMAGENES/zina 3.jpeg" alt=""/>
+        <h1>Primera vez en tu casa</h1>
+        <p>Para serte sincero no se como termine aqui ese dia.</p>
+    </div>
+
+</div>
+
+
+<!-- FOTO 4 -->
+<div id="pantalla-foto4" class="pantalla-interna">
+
+    <button class="cerrar" onclick="cerrarPantalla()">×</button>
+
+    <div class="contenido-pantalla">
+        <img src="../IMAGENES/zina 4.jpeg" alt=""/>
+        <h1>MEDAPOTO</h1>
+        <p>Hay que volver a salir con meda porfavor zinaaa.</p>
+    </div>
+
+</div>
+
+
+<!-- POSTER -->
+<div id="pantalla-poster" class="pantalla-interna">
+
+    <button class="cerrar" onclick="cerrarPantalla()">×</button>
+
+    <div class="contenido-pantalla poster-pantalla">
+        <span>✦</span>
+        <h1>Recuerdos</h1>
+        <p>Una pagina que hice pero me olvide de terminar xdd que hice para que zina no se sienta mal cuando este sola y recuerde bonitos momentos que compartio y no se porque esta tan largo este texto ah y si me llego a morir esta pagina quedara como recuerdo no se porque hago esto ayuda tengo sueño</p>
+        <span>✦</span>
+    </div>
+
+</div>
+
+
+<!-- NOTA 1 -->
+<div id="pantalla-nota1" class="pantalla-interna">
+
+    <button class="cerrar" onclick="cerrarPantalla()">×</button>
+
+    <div class="contenido-pantalla nota-grande">
+        <h1>Aaaaa tengo sueño x2</h1>
+
+        <p>
+            Como te dije no se en que momento te volviste alguien importante en mi vida.
+            y si me arrepiento de algo es de no conocerte antes.
+        </p>
+    </div>
+
+</div>
+
+
+<!-- NOTA 2 -->
+<div id="pantalla-nota2" class="pantalla-interna">
+
+    <button class="cerrar" onclick="cerrarPantalla()">×</button>
+
+    <div class="contenido-pantalla nota-grande">
+        <h1>Quiero nestum</h1>
+
+        <p>
+            Quiero nestum quiero nestum quiero nestum
+            es lo que diria zina
+        </p>
+    </div>
+
+</div>
+
+
+<!-- VIDEO 1 -->
+<div id="pantalla-video1" class="pantalla-interna">
+
+    <button class="cerrar" onclick="cerrarPantalla()">×</button>
+
+    <div class="contenido-pantalla">
+
+        <video width="320" height="240" controls>
+            <source src="../Videos/zina 5.mp4" type="video/mp4">
+        </video>
+
+        <h1>Zina cayendo en la locura en su cuarto</h1>
+        <p>Tenia este video en mi cel y decidi ponerlo :P.</p>
+
+    </div>
+
+</div>
+
+
+<!-- VIDEO 2 -->
+<div id="pantalla-video2" class="pantalla-interna">
+
+    <button class="cerrar" onclick="cerrarPantalla()">×</button>
+
+    <div class="contenido-pantalla">
+
+        <video width="320" height="240" controls>
+            <source src="../Videos/Zina.mp4" type="video/mp4">
+        </video>
+
+        <h1>Este lo grabe hoy xd </h1>
+        <p>COME ON ALINE.</p>
+
+    </div>
+
+</div>
+
+
+<div id="pantalla-musica" class="pantalla-interna">
+
+    <button class="cerrar" onclick="cerrarPantalla()">×</button>
+
+    <div class="contenido-pantalla music-pantalla">
+
+        <div class="disco-grande">
+            ♫
+        </div>
+
+        <h1>Close to you</h1>
+
+        <p>Me gusto la cancion y es mi pagina asi que hago lo que me da la gana >:)</p>
+
+        <div class="control-volumen">
+
+            <span>🔉</span>
+
+            <input
+                type="range"
+                id="volumen"
+                min="0"
+                max="100"
+                value="100">
+
+            <span>🔊</span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="../JS/JS 1.js" type="text/javascript"></script>
+
+</body>
+</html>
